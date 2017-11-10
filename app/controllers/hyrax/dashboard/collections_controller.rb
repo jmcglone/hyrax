@@ -62,7 +62,7 @@ module Hyrax
         collection_type_id = params[:collection_type_id]
         add_breadcrumb t(:'hyrax.controls.home'), root_path
         add_breadcrumb t(:'hyrax.dashboard.breadcrumbs.admin'), hyrax.dashboard_path
-        add_breadcrumb t(:'hyrax.dashboard.collections.new.header'), request.path
+        add_breadcrumb t(:'hyrax.dashboard.collections.new.header') + " " + @collection.collection_type.title, request.path
         @collection.collection_type_gid = CollectionType.find(collection_type_id).gid unless collection_type_id.nil?
         @collection.apply_depositor_metadata(current_user.user_key)
         form

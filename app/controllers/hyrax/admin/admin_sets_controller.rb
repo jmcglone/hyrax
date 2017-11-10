@@ -106,7 +106,7 @@ module Hyrax
       def setup_form
         add_breadcrumb t(:'hyrax.controls.home'), root_path
         add_breadcrumb t(:'hyrax.dashboard.breadcrumbs.admin'), hyrax.dashboard_path
-        add_breadcrumb t(:'hyrax.admin.sidebar.admin_sets'), hyrax.admin_admin_sets_path
+        add_breadcrumb t(:'hyrax.dashboard.my.collections'), hyrax.my_collections_path
         add_breadcrumb action_breadcrumb, request.path
         form
       end

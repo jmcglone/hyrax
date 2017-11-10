@@ -1,6 +1,7 @@
-<% provide :page_title, construct_page_title( t('.header', type_title: @collection.collection_type.title) ) %>
+<% provide :page_title, construct_page_title( t('.header', type_title:  @collection.collection_type.title) ) %>
 <% provide :page_header do %>
-  <h1><span class="fa fa-edit"></span> <%= t('.header', type_title: @collection.collection_type.title) %> </h1>
+  <% a_title = t(:'hyrax.dashboard.collections.new.header') + " " + @collection.collection_type.title %>
+  <h1><span class="fa fa-edit"></span> <%= a_title %> </h1>
 <% end %>
 
 <div class="row">
@@ -8,3 +9,6 @@
     <%= render 'form' %>
   </div>
 </div>
+
+
+#t(:'hyrax.dashboard.collections.new.header') + " " + @collection.collection_type.title
