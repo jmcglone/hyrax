@@ -158,7 +158,6 @@ fr:
         new:
           header: Créer un nouvel ensemble administratif
         show:
-          breadcrumb: Ensemble de vues
           confirm_delete: Êtes-vous sûr de vouloir supprimer ce Set administratif? Cette action ne peut pas être annulée.
           header: Ensemble administratif
           item_list_header: Fonctionne dans cet ensemble

@@ -162,7 +162,6 @@ en:
         new:
           header:         "Create New Administrative Set"
         show:
-          breadcrumb:       "View Set"
           confirm_delete:   "Are you sure you wish to delete this Administrative Set? This action cannot be undone."
           header:           "Administrative Set"
           item_list_header: "Works in This Set"
@@ -575,7 +574,7 @@ en:
             collection_title: "Collection Title"
           this_collection_in_other_collections_description: "You can add this collection to other collections as a sub-collection."
         new:
-          header: "New %{type_title}"
+          header: "New"
         show:
           header: "Collection"
           item_count: "Works"
@@ -686,7 +685,7 @@ en:
         files:              "Files deposited"
         heading:            "Your Statistics"
         works:              "Works created"
-      title:                    "My Dashboard"
+      title:                    "Administration"
       transfer_of_ownership:    "Transfers of Ownership"
       transfer_works_link:      "Select works to transfer"
       transfers_received:       "Transfers Received"

@@ -110,6 +110,14 @@ RSpec.describe Hyrax::Admin::AdminSetsController do
           expect(assigns[:presenter]).to be_kind_of Hyrax::AdminSetPresenter
           expect(assigns[:presenter].id).to eq admin_set.id
         end
+
+        it "sets breadcrumbs" do
+          get :show, params: { id: admin_set }
+          expect(controller).to receive(:add_breadcrumb).with(I18n.t('hyrax.controls.home'), Hyrax::Engine.routes.url_helpers.root_path(locale: 'en'))
+          expect(controller).to receive(:add_breadcrumb).with('Administration', Hyrax::Engine.routes.url_helpers.dashboard_path(locale: 'en'))
+          expect(controller).to receive(:add_breadcrumb).with('Your Collections', Hyrax::Engine.routes.url_helpers.my_collections_path(locale: 'en'))
+          expect(controller).to receive(:add_breadcrumb).with(/admin/, request.path, locale: 'en')
+        end
       end
     end
 

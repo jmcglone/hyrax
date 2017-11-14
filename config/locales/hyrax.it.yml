@@ -158,7 +158,6 @@ it:
         new:
           header: Crea nuovo set amministrativo
         show:
-          breadcrumb: Visualizza set
           confirm_delete: Sei sicuro di voler eliminare questo set amministrativo? Questa azione non può essere annullata.
           header: Impostazione amministrativa
           item_list_header: Funziona in questo set
