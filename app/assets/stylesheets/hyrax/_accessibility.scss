@@ -10,8 +10,9 @@
 // These changes meet WCAG AA and AAA compliance standard
 // * Darkens the text for active breadcrumb on every page. Meets WCAG AA and AAA
 // * Darkens the text for disabled pagination buttons on every page.
-.breadcrumb>.active, .pagination > .disabled > a {
-    color: #4c4c4c;
+.breadcrumb>.active,
+.pagination > .disabled > a {
+  color: #4c4c4c;
 }
 
 // NOTE: This isn't an ideal fix. We're using select2-rails v3.5
@@ -23,5 +24,5 @@
 // Darkens the 'Search for a user' text in dropdown on 'Dashboard page'
 // Meets WCAG AA and AAA compliance standard
 .select2-default {
-    color: #4c4c4c !important;
+  color: #4c4c4c !important;
 }
